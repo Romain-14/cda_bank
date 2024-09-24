@@ -1,0 +1,18 @@
+{
+	"name": "bank",
+	"version": "1.0.0",
+	"description": "On va simuler le fonctionnement d'une banque\r Une banque a un nom et une liste de clients\r Un client a un nom prénom salaire et ville comme infos\r Une banque peut ajouter un client a sa liste ce qui va créer automatiquement son compte\r Un compte a un numero de 7 chiffres générés aléatoirement et un solde initial a 0\r On peut deposer et retirer de l'argent depuis le compte\r Une banque peut faire la demande d'une CB pour le compte d'un client\r Une CB a 16 chiffres générés aléatoirement (XXXX XXXX XXXX XXXX) un CVV de 3 chiffres générés aléatoirement (XXX) et une date d'expiration 5 ans apres la date de creation de la CB",
+	"main": "index.js",
+	"scripts": {
+		"start:build": "tsc -w",
+		"start:run": "nodemon build/index.js",
+		"start": "concurrently npm:start:*"
+	},
+	"keywords": [],
+	"author": "",
+	"license": "ISC",
+	"devDependencies": {
+		"concurrently": "^9.0.1",
+		"nodemon": "^3.1.7"
+	}
+}
